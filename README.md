@@ -1,6 +1,6 @@
 # wpp_LearnPress
 
-the plugin learnpress has a reflected XSS.
+the Wordpress Plugin learnpress has a reflected XSS.
 
 
 Details:
@@ -11,6 +11,6 @@ Details:
 And the issue in the file: ./learnpress/learnpress.php: 
 ![image](https://user-images.githubusercontent.com/32059182/98671944-f99c5600-238f-11eb-97d8-5b80657ec34b.png)
 the variable $log output without sanitize.
-
+Thank you~
 
 * patch: https://plugins.trac.wordpress.org/changeset?old_path=%2Flearnpress&old=2413726&new_path=%2Flearnpress&new=2413726&sfp_email=&sfph_mail=
