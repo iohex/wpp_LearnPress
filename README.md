@@ -3,7 +3,7 @@
 the Wordpress Plugin learnpress has a reflected XSS.
 
 
-Details:
+## Details:
 * Plugin: https://wordpress.org/plugins/learnpress/
 * Vulnerable Version: 3.2.7.9
 * Payload: http://127.0.0.1/wordpress/wp-admin/edit.php?post_type=lp_course&view-log=aaa%22%3Csvg/onload=%22alert(1)%22/%3E
@@ -13,7 +13,7 @@ And the issue in the file: ./learnpress/learnpress.php:
 the variable $log output without sanitize.
 
 
-Fix:
+## Fix:
 * Fix Version: 3.2.8
 * patch: https://plugins.trac.wordpress.org/changeset?old_path=%2Flearnpress&old=2413726&new_path=%2Flearnpress&new=2413726&sfp_email=&sfph_mail=
 
